@@ -147,6 +147,6 @@ Pick a license before publishing. For a design meant to be learned from and reus
 
 ## 👤 Author
 
-Akshay · [add your LinkedIn URL]
+Akshay · https://www.linkedin.com/in/akshaymomaya/
 
 Spot a mistake or have a better way to do something? Open an issue. Corrections welcome.
