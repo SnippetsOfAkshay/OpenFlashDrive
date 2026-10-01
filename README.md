@@ -1,7 +1,6 @@
 # 💾 OpenFlashDrive
-
 A from-scratch USB-C mass-storage device built around the Prolific PL2732 USB 3.0-to-eMMC controller, with two 64 GB eMMC chips presented to the host as a single 128 GB volume.
-
+![Flash Drive render](Render/Flash%20Drive.png)
 Status: schematic and PCB design study · EDA: KiCad 10.0.5 · Link speed: USB 3.0 SuperSpeed (5 Gbps), USB 2.0 fallback
 
 ---
