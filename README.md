@@ -32,21 +32,7 @@ This exists to show what goes into a device people treat as disposable, and what
 
 Signal path, following the data from the plug inward:
 
-```
-USB-C connector
-   │
-   ├── High-speed data lines ─→ TVS ESD arrays ─→ HD3SS3220 (orientation detect + SuperSpeed mux) ─┐
-   │                                                                                                │
-   ├── USB 2.0 D+/D-  ──────────────────────────────────────────────────────────────────────────→ │
-   │                                                                                                ▼
-   └── VBUS (5 V) ─→ TPD1S514 (VBUS protection / current limit) ─→ protected VBUS         PL2732 controller
-                                             │                                                      │
-                                             └─→ TPS62807 buck ─→ 1.2 V core rail ──────────────────┤
-                                                                                                    ▼
-                                                                                   2 × 64 GB eMMC (one 128 GB volume)
-```
-![Uploading USB-TO-MEM.svg…]()
-
+![Architecture](Architecture.svg)
 
 Key points the schematic makes explicit:
 - ESD protection and VBUS protection run on separate paths. TVS arrays clamp the data lines; a separate device limits current and guards the VBUS rail. Signal and power are protected independently.
